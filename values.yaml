@@ -8,7 +8,7 @@ environnement: ovh
 phase: dev
 
 image:
-  repository: harbor.apps.dso.numerique-interieur.com/form-crtzel
+  repository: harbor.apps.dso.numerique-interieur.com/form-crtzel/
   name: java-demo
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
