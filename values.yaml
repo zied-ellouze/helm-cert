@@ -25,6 +25,9 @@ ingress:
     enabled: true
   host: cert-zel-1.apps.dso-formation.hp.numerique-interieur.com
 
+service:
+  type: ClusterIP
+
 resources:
   limits:
     memory: "512Mi"
