@@ -36,7 +36,7 @@ resources:
 global:
   postgresql:
     auth:
-      existingSecret: my-secret
+      existingSecret: mysecret-sops
       secretKeys:
         userPasswordKey: "PG_PASSWORD"
         adminPasswordKey: "PG_PASSWORD"
