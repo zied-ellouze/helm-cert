@@ -29,7 +29,7 @@ spec:
             - name: SPRING_DATASOURCE_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: my-secret
+                  name: mysecret-sops
                   key: PG_PASSWORD
             - name: SPRING_DATASOURCE_USERNAME
               value: {{ .Values.global.postgresql.auth.username }}
