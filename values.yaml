@@ -8,7 +8,7 @@ environnement: ovh
 phase: dev
 
 image:
-  repository: harbor.apps.c6.numerique-interieur.com/mi-service-team
+  repository: harbor.apps.dso.numerique-interieur.com/form-crtzel
   name: java-demo
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
@@ -19,15 +19,11 @@ imagePullSecrets:
 nameOverride: ""
 fullnameOverride: ""
 
-service:
-  type: NodePort
-  port: 8080
-
 ingress:
   enabled: true
   secret:
     enabled: true
-  host: plec-demo.dev.numerique-interieur.com
+  host: cert-zel-1.apps.dso-formation.hp.numerique-interieur.com
 
 resources:
   limits:
